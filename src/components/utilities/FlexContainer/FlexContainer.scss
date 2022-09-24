@@ -1,0 +1,10 @@
+.sticky_flex
+{
+    position: sticky;
+    top:110px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: flex-end;
+}

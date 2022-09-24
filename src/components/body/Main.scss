@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-flow: row;
+    // gap:80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 90px;
+    position: relative;
+
+}
+
+#background_image {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: -1;
+}
+
+
+// .nav{
+
+// }

@@ -1,0 +1,23 @@
+const [myColor, setMyColor] = useState < any > ()
+
+
+const handleColorChange = (e: any) => {
+    console.log(e.target.value);
+
+    setMyColor(e.target.value);
+}            
+            
+            
+            <h1>{myColor}</h1>
+
+            <input value={myColor} onChange={(e) => {
+                // console.log(e.target.value)
+                handleColorChange(e)
+            }
+
+            } type="color">
+            </input>
+            <div style={{ color: myColor }}>
+                <p color={myColor}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quia facere? Velit cumque quibusdam blanditiis sit id tempora, eius, totam accusamus iusto beatae quod adipisci animi quis, excepturi porro. Modi?
+                </p>
+            </div>

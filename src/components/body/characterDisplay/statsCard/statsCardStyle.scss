@@ -1,0 +1,95 @@
+// .stat-name{
+//     // color:red;
+// }
+
+// .statsCard{
+//     display: flex;
+//     flex-direction: column;
+//     gap:30px;
+// }
+.statsCard{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+}
+.stat-value {
+    // color:teal;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+
+}
+
+.clickable {
+    // padding: 0;
+    // height: 18px;
+    // width: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    // background-color: white;
+    // color:white;
+    &:hover {
+        color: #aa0000;
+
+    }
+}
+
+
+.statsAndValue{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.valuesContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 8px;
+
+    .bordered_div {
+        border: 2px solid white;
+        border-radius: 8px;
+        padding: 4px 6px;
+        min-width: 190px;
+
+        .icon_with_text {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 12px;
+            font-size: 18px;
+            .left{
+                width: 120px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap:6px;
+            }
+        }
+    }
+}
+.statsContainer{
+    padding:0 20px;
+
+}
+// .spaced-li{
+//     display: flex;
+//     flex-direction: row ;
+//     width:80px;
+// }

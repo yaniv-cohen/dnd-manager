@@ -1,0 +1,25 @@
+.RightInfo{
+    height:max-content;
+    max-width: 600px;
+    // top:110px;
+    // padding-top:10px;
+    // align-self: flex-start;
+    padding:20px;
+    // top:15px;
+    img{
+        margin-right:40px;
+
+    }
+}
+aside{
+    p{
+        max-width: 20vw;
+        padding-top: 10px;
+        margin: 0;
+    }
+}
+.hideInfoButton{
+    float:right;
+    width:50px;
+    height:50px;
+}

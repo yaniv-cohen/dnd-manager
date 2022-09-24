@@ -1,0 +1,56 @@
+.barbarian {
+     background-image: url('../../icons/class_icons/barbarian.png');
+}
+
+.bard {
+     background-image: url('../../icons/class_icons/bard.png');
+}
+
+.cleric {
+     background-image: url('../../icons/class_icons/cleric.png');
+}
+
+.druid {
+     background-image: url('../../icons/class_icons/druid.png');
+}
+
+.fighter {
+     background-image: url('../../icons/class_icons/fighter.png');
+}
+
+.monk {
+     background-image: url('../../icons/class_icons/monk.png');
+}
+
+.paladin {
+     background-image: url('../../icons/class_icons/paladin.png');
+}
+
+.ranger {
+     background-image: url('../../icons/class_icons/ranger.png');
+}
+
+.rogue {
+     background-image: url('../../icons/class_icons/rogue.png');
+}
+
+.sorcerer {
+     background-image: url('../../icons/class_icons/sorcerer.png');
+}
+
+.warlock {
+     background-image: url('../../icons/class_icons/warlock.png');
+}
+
+.wizard {
+     background-image: url('../../icons/class_icons/wizard.png');
+}
+
+
+.a {
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 100%;
+     width: auto;
+}
