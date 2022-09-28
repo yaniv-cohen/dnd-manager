@@ -16,7 +16,9 @@ export const getRequest = async (type: string,limitForRequest:number,
      {
     //reset the party name 
         console.log('getRequest', type,limitForRequest)
-    axios.get(process.env.PORT || 'http://localhost:9000/' + type, {
+        let url =process.env.PORT || 'http://localhost:9000/' + type
+        console.log(url);
+    axios.get(url, {
         headers: {
             limit: limitForRequest
         }

@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 import SelectorFromArray from "./SelectorFromArray";
 
 function sendAddRequest(id: number) {
-    axios.post((process.env.PORT|| 'http://localhost:9000') +'/'+ id)
+    let url = (process.env.PORT|| 'http://localhost:9000') +'/'+ id
+    console.log(url)
+    axios.post(url)
         .then(async function (response: any
         ) {
             console.log('create_character success response:');

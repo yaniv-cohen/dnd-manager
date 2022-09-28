@@ -8,7 +8,9 @@ import './iconClasses.css';
 // import {  Link ,useParams} from "react-router-dom";
 
 function sendDeleteRequest(id: number, party: number) {
-    axios.post((process.env.PORT|| 'http://localhost:9000')+ `/${id}/${party}`)
+    let url =(process.env.PORT|| 'http://localhost:9000')+ `/${id}/${party}`
+    console.log(url)
+    axios.post(url)
         .then(async function (response: any
         ) {
             console.log('delete success response:');
