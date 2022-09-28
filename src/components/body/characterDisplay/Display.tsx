@@ -130,7 +130,7 @@ export const Display = (props: { idFromSearch: number | null, setItemData: Funct
         setItemInfo(itemInfoFromApi)
     }
     function getCharacterSheet(id: string) {
-        axios.get('http://localhost:4000/id/' + id)
+        axios.get((process.env.PORT|| 'http://localhost:9000/id/') + id)
             .then(async function (response: any) {
                 if (response.data) {
                     console.log(response.data);
