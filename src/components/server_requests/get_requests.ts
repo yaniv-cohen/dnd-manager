@@ -4,7 +4,7 @@ import axios from "axios";
 export const getCharactersByValue = async (value: string, type: string,
     limitForRequest: number, setData: Function) => {
 
-    const url =  ((process.env.PORT|| 'http://localhost:9000') +'/' + type +
+    const url =  (window.location.origin +'/' + type +
         '/' + value + '/' + limitForRequest);
     console.log(url);
     let response = await (await fetch(url)).json();
@@ -16,7 +16,7 @@ export const getRequest = async (type: string,limitForRequest:number,
      {
     //reset the party name 
         console.log('getRequest', type,limitForRequest)
-        let url =process.env.PORT || 'http://localhost:9000/' + type
+        let url =window.location.origin+'/' + type
         console.log(url);
     axios.get(url, {
         headers: {
