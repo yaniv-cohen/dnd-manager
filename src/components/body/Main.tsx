@@ -7,6 +7,7 @@ import '../utilities/iconClasses.css';
 import RightInfo from '../RightInfo/RightInfo';
 import './Main.scss';
 import FlexContainer from '../utilities/FlexContainer/FlexContainer';
+import { log } from 'console';
 // import Theme from '../../types/theme'
 export function Main() {
     // const things =  React.useContext(ThemeContext);
@@ -15,7 +16,9 @@ export function Main() {
     const [itemIndex, setItemIndex] = useState<string>('dagger of killing');
     const [itemData, setItemData] = useState<any>(null);
     const [displayMode, setDisplayMode] = useState<string>('showCharacter')
-
+    useEffect(() => {
+console.log(process.env.NODE_ENV)
+    },[]);
     useEffect(() => {
         console.log(`change itemIndex to ${itemIndex}`);
 
