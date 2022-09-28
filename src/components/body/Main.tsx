@@ -17,7 +17,7 @@ export function Main() {
     const [itemData, setItemData] = useState<any>(null);
     const [displayMode, setDisplayMode] = useState<string>('showCharacter')
     useEffect(() => {
-console.log(process.env.NODE_ENV)
+console.log(process.env.PORT)
     },[]);
     useEffect(() => {
         console.log(`change itemIndex to ${itemIndex}`);
