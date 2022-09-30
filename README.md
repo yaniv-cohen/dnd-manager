@@ -8,7 +8,7 @@ The server sends requests to a MongoDB server, and the official D&D api document
 
 https://yaniv-dnd-manager.herokuapp.com/
 
-
+<a href="https://yaniv-dnd-manager.herokuapp.com/" style="color: red; text-decoration: underline;text-decoration-style: dotted;">custom link</a>
 
 
 ![D&D](https://images.ctfassets.net/swt2dsco9mfe/1qU2YMq2MSczf9KGme5gu7/a580e2f158f2c08faad3a9d4463af0bc/dnd-hub-logo.png?fm=avif)
