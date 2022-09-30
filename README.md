@@ -1,4 +1,4 @@
-#D&D Characters managers
+# D&D Characters managers
 
 Welcome adventurers! This is a tool for tracking characters for your personal games,
 your orginization's parties and for sharing your ideas for character builds and stories.
