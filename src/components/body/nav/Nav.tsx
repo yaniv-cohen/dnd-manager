@@ -197,8 +197,8 @@ export function Nav(props: { showNav?: boolean, setIdFromSearch?: Function }) {
 
     //called when user clicks on a table cell
     const getCharactersByValue = async (value: string, type: string) => {
-        const url = 'http://localhost:4000/get_characters/' + type +
-            '/' + value + '/' + limitForRequest;
+        const url = (window.location.origin + `/${type}` +
+            '/' + value + '/' + limitForRequest);
         console.log(url);
         let response = await (await fetch(url)).json();
         setData(response);

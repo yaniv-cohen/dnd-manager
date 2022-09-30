@@ -3,18 +3,22 @@ import axios from "axios";
 //called when user clicks on a table cell
 export const getCharactersByValue = async (value: string, type: string,
     limitForRequest: number, setData: Function) => {
-    const url = 'http://localhost:4000/get_characters/' + type +
-        '/' + value + '/' + limitForRequest;
+
+    const url =  (window.location.origin +'/' + type +
+        '/' + value + '/' + limitForRequest);
     console.log(url);
     let response = await (await fetch(url)).json();
     setData(response);
 }
 
 export const getRequest = async (type: string,limitForRequest:number,
-     setTableBodyType: Function, setData: Function, setRules:Function, setCurrentPartyName:Function, parameter?: string) => {
+     setTableBodyType: Function, setData: Function, setRules:Function, setCurrentPartyName:Function, parameter?: string) => 
+     {
     //reset the party name 
-
-    axios.get('http://localhost:4000/' + type, {
+        console.log('getRequest', type,limitForRequest)
+        let url =window.location.origin+'/' + type
+        console.log(url);
+    axios.get(url, {
         headers: {
             limit: limitForRequest
         }

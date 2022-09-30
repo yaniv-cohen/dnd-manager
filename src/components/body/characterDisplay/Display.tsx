@@ -130,7 +130,10 @@ export const Display = (props: { idFromSearch: number | null, setItemData: Funct
         setItemInfo(itemInfoFromApi)
     }
     function getCharacterSheet(id: string) {
-        axios.get('http://localhost:4000/id/' + id)
+        let url = window.location.origin + `/id/${id}`
+        console.log(url);
+        
+        axios.get(url)
             .then(async function (response: any) {
                 if (response.data) {
                     console.log(response.data);

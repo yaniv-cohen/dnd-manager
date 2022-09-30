@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 import SelectorFromArray from "./SelectorFromArray";
 
 function sendAddRequest(id: number) {
-    axios.post('http://localhost:4000/create_character/' + id)
+    let url = window.location.origin +'/'+ id
+    console.log(url)
+    axios.post(url)
         .then(async function (response: any
         ) {
             console.log('create_character success response:');
@@ -42,7 +44,7 @@ export const createSelectionFromRules = (rules: any, setSelectionJSX: Function) 
     //
     const submitCharacter = () => {
         console.log('submit:', outputCharacter);
-        axios.post('http://localhost:4000/create_character', {
+        axios.post(window.location.origin +'/create_character', {
             data: {
                 newCharacter: outputCharacter
             }
