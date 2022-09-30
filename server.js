@@ -2,9 +2,10 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const app = express();
-
+require('dotenv').config()
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://yaniv:y7ySs3K7HHb67F0u@gamedata.uzxxgby.mongodb.net/?retryWrites=true&w=majority";
+const uri = ""+ process.env.mongoUri;
+console.log(uri)
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 
