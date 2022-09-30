@@ -174,8 +174,8 @@ export const Display = (props: { idFromSearch: number | null, setItemData: Funct
 
             <section>
                 {/* <h1>{'current id ' + props.idFromSearch + ', and current is ' + currentId}</h1> */}
-                <input onClick={()=>{setInputId(null) }} onChange={(e) => { handleInputChange(e) }} value={inputId ?? '' + props.idFromSearch} defaultValue={1}></input>
-                <button style={{display:"inline-block"}} role="button" onClick={() => { if (inputId) handleGoPress(inputId) }}>Show character data</button>
+                {/* <input onClick={()=>{setInputId(null) }} onChange={(e) => { handleInputChange(e) }} value={inputId ?? '' + props.idFromSearch} defaultValue={1}></input>
+                <button style={{display:"inline-block"}} role="button" onClick={() => { if (inputId) handleGoPress(inputId) }}>Show character data</button> */}
 
                 <br></br>
                 <br></br>
